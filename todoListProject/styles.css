@@ -1,0 +1,324 @@
+.todoList-body {
+    position: absolute;
+    left: 50%;
+    top: 2vw;
+    display: flex;
+    margin-left: -30vw;
+    background-color: lightgrey;
+    width: 60vw;
+    height: auto;
+    border-width: 0.15vw;
+    border-radius: 0.2vw 0.2vw 0vw 0vw;
+    border-style: solid;
+    border-color: lightgrey;
+}
+
+.todoList-body h1 {
+    width: auto;
+    color: black;
+    margin: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+}
+
+.todoList-add {
+    border-color: lightgrey;
+    border-width: 0.15vw;
+    border-style: solid;
+    position: absolute;
+    left: 50%;
+    margin-left: -30.1vw;
+    top: 3.8vw;
+    height: auto;
+    width: 60vw;
+}
+
+.todoList-add-input {
+    width: 93%;
+    margin: 1.5vw;
+    height: 1.5vw;
+    border-radius: 0.1vw;
+    border-color: lightgrey;
+    border-style: solid;
+}
+
+.todoList-add-input:focus {
+    box-shadow: 0 0 0vw 0.1vw mediumblue;
+    outline: none;
+}
+
+.todoList-add-button {
+    background-color: mediumblue;
+    margin: 1.5vw;
+    margin-top: -1.5vw;
+    height: 1.9vw;
+    color: white;
+    font-family: sans-serif;
+    font-size: 0.9vw;
+    cursor: pointer;
+    border-style: none;
+    border-radius: 0.2vw;
+}
+
+.todoList-search {
+    position: absolute;
+    top: 11.85vw;
+    width: 60vw;
+    margin-left: -30.1vw;
+    left: 50%;
+    border-color: lightgrey;
+    border-width: 0.15vw;
+    border-style: solid;
+}
+
+.todoList-search h1 {
+    margin-top: 2vw;
+    margin-left: 1.5vw;
+}
+
+.todoList-search-input {
+    width: 93%;
+    margin: 1.5vw;
+    height: 1.5vw;
+    margin-top: 0vw;
+    border-radius: 0.1vw;
+    border-color: lightgrey;
+    border-style: solid;
+}
+
+.todoList-search-input:focus {
+    box-shadow: 0 0 0vw 0.1vw mediumblue;
+    outline: none;
+}
+
+.todoList-listTodos {
+    margin: 1.5vw;
+    margin-top: 0.5vw;
+    border-top-style: solid;
+    border-top-color: lightgrey;
+    border-top-width: 0.15vw;
+    width: 94%;
+}
+
+.todoList-listTodos-cleanTodosButton {
+    background-color: mediumblue;
+    margin: 1.5vw;
+    margin-left: 0vw;
+    height: 1.9vw;
+    color: white;
+    font-family: sans-serif;
+    font-size: 0.9vw;
+    cursor: pointer;
+    border-style: none;
+    border-radius: 0.2vw;
+}
+
+.todoList-listTodos-todoList {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.todoList-listTodos-todoList-todos {
+    height: 3vw;
+    border-width: 0.15vw;
+    border-radius: 0.2vw;
+    border-color: lightgrey;
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 1vw;
+    position: relative;
+    font-size: 1vw;
+    white-space: nowrap;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.todoList-listTodos-todoList-todos-clearButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: mediumblue;
+    margin-left: auto;
+    font-size: 1vw;
+    width: 2vw;
+}
+
+@media only screen and (max-width: 768px) {
+    .todoList-body {
+        left: 34%;
+        width: 90vw;
+        height: 10vw;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2vw;
+        border-bottom-left-radius: 0vw;
+        border-bottom-right-radius: 0vw;
+    }
+
+    .todoList-body h1{
+        font-size: 5vw;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .todoList-add {
+        left: 33.3%;
+        top: 10.2vw;
+        width: 90vw;
+        height: 30vw;
+    }
+
+    .todoList-add-input {
+        height: 5vw;
+        border-radius: 2vw;
+        margin: 5vw;
+        width: 90%;
+        margin-top: 8vw;
+        margin-bottom: 3vw;
+    }
+
+    .todoList-add-button {
+        height: 5vw;
+        width: 15vw;
+        font-size: 1.5vw;
+        border-radius: 3vw;
+        margin: 3vw;
+        margin-left: 5vw;
+        margin-top: 2vw;
+    }
+
+    .todoList-search {
+        top: 40.4vw;
+        width: 90vw;
+        left: 33.3%;
+        border-bottom-left-radius: 2vw;
+        border-bottom-right-radius: 2vw;
+    } 
+    
+    .todoList-search h1{
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 6vw;
+        margin-top: 6vw;
+    }
+
+    .todoList-search-input {
+        height: 5vw;
+        border-radius: 2vw;
+        margin: 5vw;
+        width: 90%;
+        margin-top: 5vw;
+        margin-bottom: 3vw;
+    }
+
+    .todoList-listTodos {
+        width: 90%;
+        margin: 5vw;
+        margin-top: 2vw;
+    }
+
+    .todoList-listTodos-todoList-todos {
+        height: 7vw;
+        border-radius: 2vw;
+        font-size: 2.5vw;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    }
+
+    .todoList-listTodos-todoList-todos-clearButton {
+        height: 5vw;
+        width: 5vw;
+        font-size: 2vw;
+    }
+
+    .todoList-listTodos-cleanTodosButton {
+        height: 6vw;
+        width: auto;
+        font-size: 1.5vw;
+        border-radius: 3vw;
+        margin: 3vw;
+        margin-left: 0vw;
+        margin-top: 2vw;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1400px) {
+    .todoList-body {
+        width: 80vw;
+        height: 8vw;
+        left: 40%;
+        align-items: center;
+        border-top-left-radius: 2vw;
+        border-top-right-radius: 2vw;
+    }
+    
+    .todoList-body h1 {
+        font-size: 3vw;
+        margin-left: 2vw;
+    }
+
+    .todoList-add {
+        width: 80vw;
+        left: 37.5%;
+        top: 8.1vw;
+    }
+
+    .todoList-add-input {
+        height: 3vw;
+        border-radius: 2vw;
+        margin: 3vw;
+    }
+
+    .todoList-add-button {
+        height: 3vw;
+        width: auto;
+        border-radius: 2vw;
+        margin-left: 3vw;
+        font-size: 1.2vw;
+    }
+
+    .todoList-search {
+        width: 80vw;
+        left: 37.5%;
+        top: 22.05vw;
+    }
+
+    .todoList-search h1 {
+        font-size: 3vw;
+        margin-left: 2vw;
+    }
+
+    .todoList-search-input {
+        height: 3vw;
+        border-radius: 2vw;
+        margin: 3vw;
+    }
+
+    .todoList-listTodos {
+        margin-left: 2vw;
+    }
+
+    .todoList-listTodos-todoList-todos {
+        height: 5vw;
+        border-radius: 2vw;
+        font-size: 1.5vw;
+    }
+    .todoList-listTodos-todoList-todos-clearButton {
+        width: 5vw;
+        font-size: 1.5vw;
+    }
+
+    .todoList-listTodos-cleanTodosButton {
+        height: 3vw;
+        width: auto;
+        border-radius: 2vw;
+        margin-left: 1vw;
+        font-size: 1.2vw;
+    }
+}

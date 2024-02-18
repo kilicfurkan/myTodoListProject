@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="todoList-body">
+        <div class="todoList-title">
+            <h1>Todo List Sayfası</h1>
+        </div>
+        <div class="todoList-add">
+            <input class="todoList-add-input" placeholder=" Todo Giriniz">
+            <button id="addButton" class="todoList-add-button">Todo Ekleyin</button>
+        </div>
+        <div class="todoList-search">
+            <h1>Todo Listesi</h1>
+            <input id="searchTodos" class="todoList-search-input" placeholder=" Todo Arayınız">
+            <div class="todoList-listTodos">
+                <ul class="todoList-listTodos-todoList">
+                </ul>
+                <button id="cleanAllTodos" class="todoList-listTodos-cleanTodosButton">Tüm Todoları Temizle</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
